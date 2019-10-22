@@ -41,7 +41,7 @@ All options in [ConnectionBuddyConfiguration.Builder](https://github.com/zplesac
 ```java
   @Override
   public void onConnectionChange(ConnectivityEvent event) {
-      if(event.getState() == ConnectivityState.CONNECTED){
+      if(event.getState().getValue() == ConnectivityState.CONNECTED){
           // device has active internet connection
       }
       else{
